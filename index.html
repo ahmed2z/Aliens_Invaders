@@ -137,9 +137,15 @@
   
      <!-- Mobile controls -->
   <div id="mobile-controls">
-    <button id="move-left" onmousedown="startMoveLeft()" onmouseup="stopMove()" style="font-size: 40px;">⬅️</button>
-    <button id="shoot" onmousedown="startShooting()" onmouseup="stopShooting()" style="font-size: 40px;">🔫</button>
-    <button id="move-right" onmousedown="startMoveRight()" onmouseup="stopMove()" style="font-size: 40px;">➡️</button>
+    <button id="move-left" 
+      onmousedown="startMoveLeft()" onmouseup="stopMove()" 
+      ontouchstart="startMoveLeft()" ontouchend="stopMove()" style="font-size: 40px;">⬅️</button>
+    <button id="shoot" 
+      onmousedown="startShooting()" onmouseup="stopShooting()" 
+      ontouchstart="startShooting()" ontouchend="stopShooting()" style="font-size: 40px;">🔫</button>
+    <button id="move-right" 
+      onmousedown="startMoveRight()" onmouseup="stopMove()" 
+      ontouchstart="startMoveRight()" ontouchend="stopMove()" style="font-size: 40px;">➡️</button>
   </div>
   
    
