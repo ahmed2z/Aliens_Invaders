@@ -252,7 +252,7 @@ function endGame() {
 
   clearInterval(generaterocks);
   clearInterval(moverocks);
-  window.removeEventListener("keydown", handleKeydown); // Stop movement
+  //window.removeEventListener("keydown", handleKeydown); // Stop movement
   keysPressed = {}; // Clear any lingering key states
 }
 
@@ -279,6 +279,16 @@ function restartGame() {
 
   initGame(); // Reinitialize the game
 }
+
+
+
+
+document.querySelectorAll('#mobile-controls button').forEach(button => {
+  button.addEventListener('contextmenu', (e) => e.preventDefault());
+});
+
+
+
 
 // Initialize the game on page load
 initGame();
